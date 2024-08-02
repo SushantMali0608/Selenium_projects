@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="2" failed="2" skipped="1">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-07-23T10:56:40 IST" name="Suite" finished-at="2024-07-23T10:57:49 IST" duration-ms="68459">
+    <groups>
+      <group name="Purchase">
+        <method signature="TestorderTest.SubmitOrder(java.util.HashMap)[pri:0, instance:SeleniumProject.TestorderTest@2ea6e30c]" name="SubmitOrder" class="SeleniumProject.TestorderTest"/>
+      </group> <!-- Purchase -->
+    </groups>
+    <test started-at="2024-07-23T10:56:40 IST" name="PlaceOrderTest" finished-at="2024-07-23T10:57:29 IST" duration-ms="49222">
+      <class name="SeleniumProject.TestorderTest">
+        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:SeleniumProject.TestorderTest@2ea6e30c]" started-at="2024-07-23T10:56:41 IST" name="LaunchApplication" finished-at="2024-07-23T10:56:58 IST" duration-ms="16849" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchApplication -->
+        <test-method signature="SubmitOrder(java.util.HashMap)[pri:0, instance:SeleniumProject.TestorderTest@2ea6e30c]" started-at="2024-07-23T10:56:58 IST" name="SubmitOrder" data-provider="getdata" finished-at="2024-07-23T10:57:09 IST" duration-ms="11376" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Email=sushantmali2016@gmail.com, Password=Morya@123}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.cssSelector: .col-sm-10 (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.182 (5b5d8292ddf..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49182}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49182/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: de4f37f59c1e32599129dd7898d4a5dc]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: .col-sm-10 (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.182 (5b5d8292ddf..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49182}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49182/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: de4f37f59c1e32599129dd7898d4a5dc
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at Framework.Abstractclass.AbstractComponants.waitForElementToAppear(AbstractComponants.java:33)
+at Framework.pageobject.Productcatalogue.getproductlist(Productcatalogue.java:37)
+at SeleniumProject.TestorderTest.SubmitOrder(TestorderTest.java:33)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SubmitOrder -->
+        <test-method is-config="true" signature="Teardown()[pri:0, instance:SeleniumProject.TestorderTest@2ea6e30c]" started-at="2024-07-23T10:57:09 IST" name="Teardown" finished-at="2024-07-23T10:57:10 IST" duration-ms="570" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Teardown -->
+        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:SeleniumProject.TestorderTest@2ea6e30c]" started-at="2024-07-23T10:57:10 IST" name="LaunchApplication" finished-at="2024-07-23T10:57:18 IST" duration-ms="7546" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchApplication -->
+        <test-method signature="SubmitOrder(java.util.HashMap)[pri:0, instance:SeleniumProject.TestorderTest@2ea6e30c]" started-at="2024-07-23T10:57:18 IST" name="SubmitOrder" data-provider="getdata" finished-at="2024-07-23T10:57:29 IST" duration-ms="11274" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Email=sushantmali@gmail.com, Password=susha@123}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.cssSelector: .col-sm-10 (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.182 (5b5d8292ddf..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49215}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49215/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ab55721e20251cc0d138b264cca28eb1]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: .col-sm-10 (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.182 (5b5d8292ddf..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49215}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49215/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ab55721e20251cc0d138b264cca28eb1
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at Framework.Abstractclass.AbstractComponants.waitForElementToAppear(AbstractComponants.java:33)
+at Framework.pageobject.Productcatalogue.getproductlist(Productcatalogue.java:37)
+at SeleniumProject.TestorderTest.SubmitOrder(TestorderTest.java:33)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SubmitOrder -->
+        <test-method is-config="true" signature="Teardown()[pri:0, instance:SeleniumProject.TestorderTest@2ea6e30c]" started-at="2024-07-23T10:57:29 IST" name="Teardown" finished-at="2024-07-23T10:57:29 IST" duration-ms="541" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Teardown -->
+        <test-method signature="Order()[pri:0, instance:SeleniumProject.TestorderTest@2ea6e30c]" started-at="2024-07-23T10:57:29 IST" name="Order" finished-at="2024-07-23T10:57:29 IST" depends-on-methods="SeleniumProject.TestorderTest.SubmitOrder" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method SeleniumProject.TestorderTest.Order() on instance SeleniumProject.TestorderTest@2ea6e30c depends on not successfully finished methods 
+[SeleniumProject.TestorderTest.SubmitOrder() on instance SeleniumProject.TestorderTest@2ea6e30c]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method SeleniumProject.TestorderTest.Order() on instance SeleniumProject.TestorderTest@2ea6e30c depends on not successfully finished methods 
+[SeleniumProject.TestorderTest.SubmitOrder() on instance SeleniumProject.TestorderTest@2ea6e30c]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Order -->
+      </class> <!-- SeleniumProject.TestorderTest -->
+    </test> <!-- PlaceOrderTest -->
+    <test started-at="2024-07-23T10:57:31 IST" name="ErrorMessageValidationTest" finished-at="2024-07-23T10:57:49 IST" duration-ms="17751">
+      <class name="SeleniumProject.ErrorMessageValidationTest">
+        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:SeleniumProject.ErrorMessageValidationTest@93cf163]" started-at="2024-07-23T10:57:31 IST" name="LaunchApplication" finished-at="2024-07-23T10:57:36 IST" duration-ms="4968" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchApplication -->
+        <test-method signature="LoginerrorValidation()[pri:0, instance:SeleniumProject.ErrorMessageValidationTest@93cf163]" started-at="2024-07-23T10:57:36 IST" name="LoginerrorValidation" finished-at="2024-07-23T10:57:38 IST" duration-ms="1578" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginerrorValidation -->
+        <test-method is-config="true" signature="Teardown()[pri:0, instance:SeleniumProject.ErrorMessageValidationTest@93cf163]" started-at="2024-07-23T10:57:38 IST" name="Teardown" finished-at="2024-07-23T10:57:38 IST" duration-ms="358" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Teardown -->
+        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:SeleniumProject.ErrorMessageValidationTest@93cf163]" started-at="2024-07-23T10:57:38 IST" name="LaunchApplication" finished-at="2024-07-23T10:57:45 IST" duration-ms="7071" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchApplication -->
+        <test-method signature="ProducterrorValidation()[pri:0, instance:SeleniumProject.ErrorMessageValidationTest@93cf163]" started-at="2024-07-23T10:57:45 IST" name="ProducterrorValidation" finished-at="2024-07-23T10:57:48 IST" duration-ms="3270" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ProducterrorValidation -->
+        <test-method is-config="true" signature="Teardown()[pri:0, instance:SeleniumProject.ErrorMessageValidationTest@93cf163]" started-at="2024-07-23T10:57:48 IST" name="Teardown" finished-at="2024-07-23T10:57:49 IST" duration-ms="479" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Teardown -->
+      </class> <!-- SeleniumProject.ErrorMessageValidationTest -->
+    </test> <!-- ErrorMessageValidationTest -->
+  </suite> <!-- Suite -->
+</testng-results>
